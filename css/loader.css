@@ -1,0 +1,36 @@
+/* Loader */
+
+.loader {
+	background: #0e0c0b;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+
+.loader img{
+	width: 300px;
+	padding: 5px 0px;
+}
+
+
+.fadeout{
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+	from {
+			
+  	}
+
+	to {
+		visibility:hidden;
+		display:none !important;	
+    }
+}

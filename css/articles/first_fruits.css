@@ -1,0 +1,55 @@
+.blog {
+    height: auto;
+}
+
+.article {
+    padding: 20px 0px 30px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.article img {
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.texto {
+    width: 75%;
+    margin: auto;
+    text-align: justify;
+}
+
+.texto h2 {
+    color: aliceblue;
+}
+
+.texto p {
+    line-height: 1.75em;
+    color: #d4e6f1;
+    font-size: 16px;
+}
+
+.texto ul {
+    margin: auto;
+    width: 95%;
+}
+
+.texto li {
+    line-height: 1.75em;
+    color: #d4e6f1;
+    margin-bottom: 10px;
+}
+
+#cusdis_thread {
+    color: d4e6f1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cusdis_thread div {
+    background-color: transparent;
+    /* Transparent background for all child divs */
+}

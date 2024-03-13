@@ -1,0 +1,170 @@
+.blog {
+    background: #181a21;
+    height: 100vh;
+    background: rgb(233, 233, 233);
+    background: linear-gradient(90deg, rgba(233, 233, 233, 1) 15%, rgba(255, 255, 255, 1) 50%, rgba(233, 233, 233, 1) 85%);
+    padding: 50px 200px 75px 200px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background: rgb(13, 11, 14);
+    background: radial-gradient(circle, rgba(13, 11, 14, 1) 0%, rgba(22, 25, 27, 1) 50%, rgba(13, 11, 14, 1) 100%);
+}
+
+.blog-portada {
+    margin-bottom: 30px;
+    padding: 0px 50px 0px 50px;
+}
+
+.blog-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 64px;
+    color: black;
+    color: #5a1499;
+}
+
+.blog-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hashtags {
+    margin-top: 20px;
+    display: grid;
+    width: 360px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.hashtags-element {
+    padding: 2px 5px 2px 5px;
+    color: #5a1499;
+    border: solid 1px #5a1499;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.hashtags p:hover {
+
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+
+.blog-articles {
+    display: grid;
+    grid-column: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+
+
+.articles {
+    padding: 30px 35px 30px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.article h2 {
+    margin-bottom: 15px;
+}
+
+.article p {
+    font-size: 16px;
+    color: grey;
+}
+
+.article a {
+    color: #5a1499;
+
+}
+
+.article a:hover {
+    color: white;
+
+}
+
+@media (max-width: 750px) {
+    .blog-portada {
+        padding: 20px 10px 5px 10px;
+    }
+
+    .blog-articles {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cursor {
+    animation: cursor-blink 1s infinite;
+}
+
+@media (max-width: 750px) {
+    .blog {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .blog-title h1 {
+        font-size: 36px;
+        font-weight: 300;
+    }
+
+    .blog-title h2 {
+        font-size: 18px;
+    }
+
+    .hashtags p {
+        font-size: 12px;
+        border-radius: 3px;
+    }
+
+
+}
+
+/*
+<div class="blog">
+		<div class="blog-portada">
+			<div class="blog-title">
+				<h1>Modulo-p Blog</h1>
+				<h2>Dive into our thought-provoking articles</h2>
+			</div>
+			<div class="hashtags">
+				<p># Insight</p>
+				<p># Technical</p>
+				<p># News</p>
+			</div>
+			
+		</div>
+
+
+
+
+*/

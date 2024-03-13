@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modulo-P</title>
+	<link rel="icon" href="img/5.png">
+
+	<!-- CSS -->
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+
+	<!-- Bootstrap -->
+
+	<!-- Google  Fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,200;1,300;1,400;1,800&display=swap"
+		rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<!-- javascript -->
+
+
+</head>
+
+<body>
+	<div class="loader">
+		<img src="img/10.png">
+	</div>
+
+	<script type="text/javascript" src="js/loader.js"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img id="icono-navegador" src="img/12.png"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="Litepaper.pdf">Litepaper</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#team">Team</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li id="demo" class="nav-item">
+						<a class="nav-link" href="/">Demo</a>
+					</li>
+				</ul>
+			</div>
+			<div class="demo-button-container">
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="demo-button"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Dapp Demo
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="demo-button">
+						<li><a class="dropdown-item" href="#">Comming Soon</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="portada">
+		<div>
+			<img src="img/background-2.png">
+		</div>
+		<div>
+			<h1 id="text">Transforming Ideas into disruptive blockchain solutions</h1>
+		</div>
+		<div class="portada-baja">
+			<a href="#video"><img src="img/flat-arrow.png"></a>
+		</div>
+	</div>
+	<!--
+	<div class="portada-baja">
+		<a href="#video"><img src="img/flat-arrow.png"></a>
+	</div>
+	-->
+
+
+
+
+	<div id="video" class="video">
+		<h2><span>Mastermind Dapp Demo:</span><br> A proof of concept using ZK-Snark and Hydra</h2>
+		<iframe id="miIframe" width="900" height="600"
+			src="https://www.youtube.com/embed/O5PcHHtz0qE?si=FX9E0ruoYjTOz0R8" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen="" style="width: 900px; height: 600px;"></iframe>
+	</div>
+
+	<div class="project">
+		<div class="idea-general">
+			<h2>CONTEXT AND PROJECT IDEA</h2>
+			<p>
+				With the emergence of zero-knowledge proofs as a new field of innovation in the industry, there is an
+				opportunity to bring these advancements to the Cardano ecosystem. However, achieving this requires the
+				implementation of key pieces of technology tailored specifically for Cardano, this imply the technical
+				challenge of working around the resource limitations of the network while maintaining the block
+				propagation smooth. Our project aims to provide a solution to this technical problem through a proof of
+				concept that implements a verifier contract for the Groth 16 protocol, leveraging the Hydra protocol for
+				computationally demanding transactions to overcome the resource threshold. The result of this work is a
+				dapp that adapts the Mastermind game, which serves as an ideal test case for ZK proofs.
+			</p>
+		</div>
+		<h2 id="key-features">KEY FEATURES</h2>
+		<div class="idea-particular">
+			<div class="features">
+				<img src="img/icons8-smart-contract-64.png">
+				<h5>Zero-Knowledge Proofs</h5>
+				<p>We utilize this new technology to generate verifiable secret proofs, unlocking novel applications and
+					use cases within the realms of privacy and scalability.</p>
+			</div>
+			<div class="features">
+				<img src="https://hydra.family/head-protocol/img/hydra-white.png">
+				<h5>Hydra protocol</h5>
+				<p>We harness the power of the Hydra protocol for affordable and high-performance transactions.
+					Considering the isomphomorfic property of the sidechain eventually in the future our ZK validators
+					could be redeployed seamlessly on the mainnet.</p>
+			</div>
+		</div>
+
+		<div class="idea-final">
+			<p>This project opens the possibility of bringing new innovations in the field of Zero Knowledge Proofs, and
+				the opportunity to leverage the state of the art ZK tooling to the Cardano ecosystem. Checkout the
+				litepaper:</p>
+			<a id="litepaper-button" href="">Litepaper</a>
+		</div>
+
+	</div>
+
+	<div id="team" class="team">
+		<h2>MODULO-P TEAM</h2>
+		<p class="team-description">As a team, our mission is to use our technology expertise to serve emerging projects
+			in Cardano, aiming to be catalysts of innovation in the industry.</p>
+		<div class="team-container">
+			<div class="team-element">
+				<img src="img/antonio.jpeg">
+				<h5>Antonio Hernández</h5>
+				<p>Haskell developer and mathematician with experience in both Plutus development and Mathematics
+					research.</p>
+				<div class="team-rss">
+					<a href="https://www.linkedin.com/in/antoniohg/"><img src="img/linked-in-50.png"></a>
+					<a href="https://github.com/ajuggler"><img src="img/github-50.png"></a>
+				</div>
+			</div>
+			<div class="team-element">
+				<img src="https://avatars.githubusercontent.com/u/24716625?v=4">
+				<h5>Juan Salvador Magán</h5>
+				<p>Full stack Web 3 developer and CIP-0093 creator focused on bringing adoption to Cardano</p>
+				<div class="team-rss">
+					<a href="https://www.linkedin.com/in/juan-salvador-mag%C3%A1n-valero-9a071442/"><img
+							src="img/linked-in-50.png"></a>
+					<a href="https://github.com/jmagan"><img src="img/github-50.png"></a>
+				</div>
+			</div>
+			<div class="team-element">
+				<img src="img/ash.jpeg">
+				<h5>Agustín Salinas</h5>
+				<p>Plutus smart contract developer and technical writer with a background in Logic and Philosophy.</p>
+				<div class="team-rss">
+					<a href="https://www.linkedin.com/in/agust%C3%ADn-bad%C3%AD-salinas-h-a41a2b227/"><img
+							src="img/linked-in-50.png"></a>
+					<a href="https://github.com/AgustinBadi"><img src="img/github-50.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="bajada">
+			<div id="f-1" class="f-elem">
+				<a href="https://www.linkedin.com/company/modulo-p/">
+					<img class="f-1-img" src="img/linkedin-70.png">
+					<p class='f-1-p'>Linkedin</p>
+				</a>
+				<a href="https://github.com/modulo-p">
+					<img class="f-1-img" src="img/github-70.png">
+					<p class='f-1-p'>Github</p>
+				</a>
+				<a href="mailto:info@modulo-p.io">
+					<img class="f-1-img" src="img/email-70.png">
+					<p class='f-1-p'>Email</p>
+				</a>
+				<a href="https://medium.com/@modp_">
+					<img class="f-1-img" src="img/medium-70.png">
+					<p class='f-1-p'>Medium</p>
+				</a>
+				<a href="https://twitter.com/modulop_">
+					<img class="f-1-img" src="img/twitter-70.png">
+					<p class='f-1-p'>Twitter</p>
+				</a>
+			</div>
+			<div id="f-2" class="f-elem">
+				<img src="img/4.png">
+				<p>Propelling the blockchain revolution into the future</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+
+		// Función para ajustar el tamaño del iframe
+		function ajustarIframe() {
+			const iframe = document.getElementById('miIframe');
+			const windowWidth = window.innerWidth;
+
+			// Verifica si el ancho de la ventana es menor a 750px
+			if (windowWidth < 750) {
+				// Ajusta el ancho y alto del iframe a 500
+				iframe.style.width = '300px';
+				iframe.style.height = '300px';
+			} else {
+				iframe.style.width = '900px';
+				iframe.style.height = '600px';
+			}
+
+		}
+
+		// Agregar un evento que se active cuando cambie el tamaño de la ventana
+		window.addEventListener('resize', ajustarIframe);
+
+		// Llama a la función una vez al cargar la página para ajustar el iframe según el ancho inicial de la ventana
+		ajustarIframe();
+
+	</script>
+
+	<!-- js-bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
