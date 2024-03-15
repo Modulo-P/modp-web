@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../css/blog.css">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../css/loader.css">
-    <link rel="stylesheet" type="text/css" href="../css/articles/first_fruits.css">
+    <link rel="stylesheet" type="text/css" href="../css/articles/hello_world.css">
 
     <!-- Bootstrap -->
 
@@ -90,30 +90,32 @@
                     one of the technologies that will drive society into a greater transition. For its part, Cardano is
                     getting really fun; interesting projects and dApps are emerging each day, along with new developer
                     tools and programming languages on the way. From the developer perspective, you feel like the
-                    network is getting more robust than before.
+                    network is getting more robust than ever.
                 </p>
                 <p>
                     On the other hand, a new hard fork is coming that will incorporate governance features and new
                     Plutus primitives. This event will open new possibilities. Given its importance, a lot has been said
                     about governance lately. Thus, conversely, technical advances have been somewhat overlooked;
                     however, just because their consequences are less obvious does not mean they are any less important.
-                    Noteworthy updates include new hashing algorithms (Blake2b-224 and Keccak-256), bitwise operations,
+                    Noteworthy <a
+                        href="https://iohk.io/en/blog/posts/2024/02/12/unlocking-more-opportunities-with-plutus-v3/">updates</a>
+                    include new hashing algorithms (Blake2b-224 and Keccak-256), bitwise operations,
                     and a range of functions to work with the bls12-381 elliptic curve. The latter is particularly
                     important because it allows the development of Zero-Knowledge proofs applications. For sure, some of
                     you readers have heard of them and may have noticed that there is a lot of expectation around them.
-                    The reason for this is that these are part of the recent the innovations in cryptography that are
+                    The reason for this is that these are part of the recent innovations in cryptography that are
                     pushing the blockchain space in a next revolution. ZK proofs address many deficiencies in privacy
                     and scalability that first-gen blockchains had. Plus, if this wasn’t enough, the most noticeable
                     quality is their programmability; they can become highly adaptable to many use cases. This explains
                     why they are becoming more ubiquitous and progressively dominating the space. In this regard,
                     Cardano is still very green compared to Ethereum, for example. This is demonstrated by the fact that
-                    zk-apps aren’t possible yet. However, these features are coming, consecuently this opens the
+                    zk-apps aren’t possible yet. However, these features are coming, so this opens the
                     opportunity to leverage developments from other parts of the blockchain ecosystem. And well… since
-                    we are passionate about cryptography (as evidenced by our name, hahaha), we decided to participate
+                    we are passionate about cryptography (as evidenced by our name lol), we decided to participate
                     in this journey and bring innovations to bridge the gap.
                 </p>
                 <p>
-                    Taking this challenge, Modulo-p took root during Emurgo’s Hackathon. Fourtunately, we reach the
+                    Taking this challenge, Modulo-p took root during Emurgo’s Hackathon. Fourtunately, we reached the
                     finals in the zero-knowledge track, and this was the first event that fueled us as team. But we
                     didn’t stayed there and we kept hungry, we decided to take our experience further; resulting in a
                     F10 funded proposal (kudos for all our supporters) to do the first Groth-16 zk-validator in the
@@ -122,10 +124,13 @@
                 </p>
                 <p>
                 <ul>
-                    <li><b>ak-381: </b> most promising outcome that we're excited to announce is the beta version of our
-                        ak-381
-                        library. This includes an implementation of the zk-validator using the Plutus V3 primitives
-                        along with utilities for proof generation and interoperability with the virtual machine.</li>
+                    <li><b>ak-381 library: </b> The most promising outcome that we're excited to announce is the beta
+                        version of
+                        our
+                        <a href="https://github.com/Modulo-P/ak-381">ak-381 library</a>
+                        . This includes an implementation of the zk-validator using the Plutus V3 primitives
+                        along with utilities for proof generation and interoperability with the virtual machine.
+                    </li>
                     <li><b>Hydra incremental commitment: </b> We've also implemented an interesting integration
                         enhancement to Hydra, mainly focused on
                         incremental commitment. This feature is important for user experience as it enables peers to
@@ -133,7 +138,8 @@
                     <li><b>Native Plutus V2 zk-Validator: </b> In our initial exploration, we successfully managed to
                         develop a zk-validator from scratch, relying solely on the V2 primitives. While this isn't the
                         most efficient solution since it can only be used in Hydra, but it was the most accessible
-                        approach to achieve a PoC until the next Plutus version release. This is available too.</li>
+                        approach to achieve a PoC until the next Plutus version release. <a
+                            href="https://github.com/Modulo-P/plutus-groth">This is available too.</a></li>
                     <li><b>zk-Mastermind Demo: </b> Lastly, we're preparing the Mastermind demo, which will wrap-up and
                         show all the above. It's a ridiculously fun way to learn about the tech behind it all! So, be
                         prepared to play.</li>

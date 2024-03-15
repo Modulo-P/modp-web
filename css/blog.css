@@ -79,19 +79,18 @@
     margin-bottom: 15px;
 }
 
-.article p {
+.articles p {
     font-size: 16px;
     color: grey;
 }
 
-.article a {
+.articles a {
     color: #5a1499;
 
 }
 
-.article a:hover {
+.articles a:hover {
     color: white;
-
 }
 
 @media (max-width: 750px) {

@@ -23,6 +23,16 @@
     text-align: justify;
 }
 
+.texto a {
+    color: #d4e6f1;
+
+}
+
+.texto a:hover {
+    color: #6456de;
+}
+
+
 .texto h2 {
     color: aliceblue;
 }
