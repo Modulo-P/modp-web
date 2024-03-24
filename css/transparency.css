@@ -1,0 +1,88 @@
+.t {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.t-header {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 75px;
+}
+
+.t-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 200;
+
+
+}
+
+.t-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+}
+
+.t-body {
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+.t-element {
+    margin: auto;
+    padding: 50px 50px 50px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /*border-style: double;*/
+    border-width: 5px;
+}
+
+.t-element h2 {
+    color: white;
+}
+
+.t-element h3 {
+    font-size: 24px;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #5a1499;
+}
+
+.t-element p {
+    color: white;
+    font-weight: 300;
+
+}
+
+.t-element ul li {
+    /* background: #461476;
+    background: linear-gradient(to right, #461476 0%, #100E76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: white;
+    padding: 5px 5px;
+    font-weight: 300;
+}
+
+.t-element ul li:hover {
+    /* background: #461476;
+    background: linear-gradient(to right, #461476 0%, #100E76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: white;
+    cursor: pointer;
+}
