@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../css/blog.css">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../css/loader.css">
-    <link rel="stylesheet" type="text/css" href="../css/articles/hello_world.css">
+    <link rel="stylesheet" type="text/css" href="../css/articles/zk_revolution.css">
 
     <!-- Bootstrap -->
 
@@ -82,81 +82,29 @@
 
     <div class="blog">
         <div class="article">
-            <img src="../img/solar-punk.jpg">
+            <img src="../img/mastermind_banner.jpg">
             <div class="texto">
-                <h2>Hello world!</h2>
-                <p>Woah! It's been almost a year since Modulo-p was formed. Time flies fast, and now we're delighted to
-                    see our first fruits. It seems like a good time to talk about what this is all about, but first, a
-                    few words to capture the exciting things happening right now in the Cardano ecosystem.</p>
+                <h2>The zk-Mastermind Game: A pioneer Cardano Dapp</h2>
                 <p>
-                    It's been really exciting to work in the blockchain space; certainly, one quickly gets that this is
-                    one of the technologies that will drive society into a greater transition. For its part, Cardano is
-                    getting really fun; interesting projects and dApps are emerging each day, along with new developer
-                    tools and programming languages on the way. From the developer perspective, you feel like the
-                    network is getting more robust than ever.
+                    Hey there! We're thrilled to announce the release of the beta version of our Mastermind game. This demo serves as a showcase for a Zero-Knowledge Dapp, leveraging the powerful capabilities of the Hydra protocol. It marks a significant milestone for Cardano in the realm of Zero-Knowledge technology.
                 </p>
                 <p>
-                    On the other hand, a new hard fork is coming that will incorporate governance features and new
-                    Plutus primitives. This event will open new possibilities. Given its importance, a lot has been said
-                    about governance lately. Thus, conversely, technical advances have been somewhat overlooked;
-                    however, just because their consequences are less obvious does not mean they are any less important.
-                    Noteworthy <a
-                        href="https://iohk.io/en/blog/posts/2024/02/12/unlocking-more-opportunities-with-plutus-v3/">updates</a>
-                    include new hashing algorithms (Blake2b-224 and Keccak-256), bitwise operations,
-                    and a range of functions to work with the bls12-381 elliptic curve. The latter is particularly
-                    important because it allows the development of Zero-Knowledge proofs applications. For sure, some of
-                    you readers have heard of them and may have noticed that there is a lot of expectation around them.
-                    The reason for this is that these are part of the recent innovations in cryptography that are
-                    pushing the blockchain space in a next revolution. ZK proofs address many deficiencies in privacy
-                    and scalability that first-gen blockchains had. Plus, if this wasn’t enough, the most noticeable
-                    quality is their programmability; they can become highly adaptable to many use cases. This explains
-                    why they are becoming more ubiquitous and progressively dominating the space. In this regard,
-                    Cardano is still very green compared to Ethereum, for example. This is demonstrated by the fact that
-                    zk-apps aren’t possible yet. However, these features are coming, so this opens the
-                    opportunity to leverage developments from other parts of the blockchain ecosystem. And well… since
-                    we are passionate about cryptography (as evidenced by our name lol), we decided to participate
-                    in this journey and bring innovations to bridge the gap.
+                    First of all, this was made possible through funding from Project Catalyst as part of our F10 proposal. We extend our sincere gratitude to the entire community whose support has been key to complete this endeavour. Special thanks go to the numerous platforms like Gimbalabs, LATAM Townhall, Asia Townhall, and Proof of Integrity for opening spaces where we could present our idea. Additionally, we are deeply appreciative of the continous assistance provided by the Hydra and the Aiken & CF team during the dapp development process.                 </p>
+                <p>
+                    The objective of this project was to pioneer one of the initial advancements in Zero-Knowledge dApps within the Cardano ecosystem, pushing the boundaries of what's achievable on Cardano in this domain. Given the actual mainnet budget constraints and the dynamic of the game, we opted to leverage the Hydra protocol to facilitate seamless and rapid transactions. This decision was imperative as certain operations of the validators proved to be computionally expensive, and the game is designed to be played at range of 10 to 20 transactions, making the Hydra protocol an ideal fit for supporting this dApp. However, with the upcoming hard fork,  we are able to deploy similar dApps with equivalent cryptographic properties directly on the L1 layer. Two important zk-validators were developed for this demo: One that it is built entirely from Plutus V2 primitives and optimized one using the Plutus V3 features.                </p>
+                <p>
+                    <b>How the game works?</b>
                 </p>
                 <p>
-                    Taking this challenge, Modulo-p took root during Emurgo’s Hackathon. Fourtunately, we reached the
-                    finals in the zero-knowledge track, and this was the first event that fueled us as team. But we
-                    didn’t stayed there and we kept hungry, we decided to take our experience further; resulting in a
-                    F10 funded proposal (kudos for all our supporters) to do the first Groth-16 zk-validator in the
-                    Cardano ecosystem. Currently, we're putting the finishing touches on that proposal, and some
-                    promising results are coming out of it:
+                    Mastermind is a guessing game of two players, a CM (code master) arranges a secret array of colored balls and a CB (code breaker) tries to find out the secret. During the game the CM will give clues to the CB  in each try; one clue is the white peg where the CB finds out a correct color ball but in incorrect order; additionally, when the CB find a ball that matches the order and color, a black peg will be provided by the CM as a clue. In our implementation, the CB wins whenever he/she finds out the secret array (4 black pegs) within 10 turns; on the other hand, if the CB can’t find the solution within 10 turns the CM wins. Also, to make it more exciting… the players bet and arbitrary quantity of tokens. For example, the CM can open the game commiting 15 Hada, later another player can join as a CB betting the same with a 30 Hada in total. Whenever one of them wins, they can claim the total ammount.                 </p>
+                <p>
+                    But this game poses a problem... What if the CM wants to trick the CB with wrong clues? What happens if the CM omits some clues to confuse the CB opponent? Well, here the Zero-Knowledge part comes into play. With this cryptographic primitive, we can construct plausible statements of secret data. Specifically, we can say, "the CM's clues are correct given the current CB guess" without directly needing to disclose the secret array to demonstrate it. This sets an interesting example where we can keep some information secret (the color array) but still be able to prove some information about this secret. And what better way than to take an obscure cryptographic concept and illustrate it with a game?
                 </p>
                 <p>
-                <ul>
-                    <li><b>ak-381 library: </b> The most promising outcome that we're excited to announce is the beta
-                        version of
-                        our
-                        <a href="https://github.com/Modulo-P/ak-381">ak-381 library</a>
-                        . This includes an implementation of the zk-validator using the Plutus V3 primitives
-                        along with utilities for proof generation and interoperability with the virtual machine.
-                    </li>
-                    <li><b>Hydra incremental commitment: </b> We've also implemented an interesting integration
-                        enhancement to Hydra, mainly focused on
-                        incremental commitment. This feature is important for user experience as it enables peers to
-                        join and leave asynchronously.</li>
-                    <li><b>Native Plutus V2 zk-Validator: </b> In our initial exploration, we successfully managed to
-                        develop a zk-validator from scratch, relying solely on the V2 primitives. While this isn't the
-                        most efficient solution since it can only be used in Hydra, but it was the most accessible
-                        approach to achieve a PoC until the next Plutus version release. <a
-                            href="https://github.com/Modulo-P/plutus-groth">This is available too.</a></li>
-                    <li><b>zk-Mastermind Demo: </b> Lastly, we're preparing the Mastermind demo, which will wrap-up and
-                        show all the above. It's a ridiculously fun way to learn about the tech behind it all! So, be
-                        prepared to play.</li>
-                </ul>
+                    The demo will be available in our website to all of you to play and have fun with your friends. Also we opened a transparency page in the website where all the code and outputs of the catalyst proposal can be found. 
                 </p>
                 <p>
-                    These advancements are currently being released and will be fully available to everyone in the
-                    following weeks. These mark the end of an exciting phase for us, one defined by a strong emphasis on
-                    technical aspects, and the dawn of a new one that embraces a broader vision, highlighting the
-                    importance of privacy within our ecosystem. But this is a matter to another post ;)
-
-                </p>
-                <p>
-                    Kind regards
+                    Greets!
                 </p>
                 <p>
                     Modulo-p team
