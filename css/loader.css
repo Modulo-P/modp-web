@@ -1,7 +1,13 @@
 /* Loader */
 
 .loader {
-	background: #0e0c0b;
+	background: #181a21;
+    background: rgb(233, 233, 233);
+    background: linear-gradient(90deg, rgba(233, 233, 233, 1) 15%, rgba(255, 255, 255, 1) 50%, rgba(233, 233, 233, 1) 85%);
+    padding: 50px 200px 75px 200px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background: rgb(13, 11, 14);
+    background: radial-gradient(circle, rgba(13, 11, 14, 1) 0%, rgba(22, 25, 27, 1) 50%, rgba(13, 11, 14, 1) 100%);
 	position: fixed;
 	top: 0;
 	left: 0;
